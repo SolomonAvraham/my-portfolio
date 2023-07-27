@@ -1,27 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Caveat&family=Itim&family=Shantell+Sans:ital,wght@1,600&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+::-webkit-input-placeholder {
+  text-align: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spin {
+  animation: spin 55s none infinite;
+}
+
+@keyframes bg {
+  from {
+    background: rgba(210, 250, 212, 0.11);
+  }
+  50% {
+    background: rgba(255, 246, 185, 0.11);
+  }
+  to {
+    background: rgba(141, 141, 141, 0.11);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.bgCircle {
+  animation: bg 1.5s infinite;
 }
+
+ 
