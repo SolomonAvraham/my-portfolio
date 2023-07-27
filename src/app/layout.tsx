@@ -22,9 +22,9 @@ export default function RootLayout({
       </head>
       <body
         suppressHydrationWarning={true}
-        className={`${inter.className} bg-gray-100   p-1`}
+        className={`${inter.className} bg-gray-100 bg-opacity-10 p-1`}
       >
-        <Header/>
+        <Header />
         {children}
       </body>
     </html>
