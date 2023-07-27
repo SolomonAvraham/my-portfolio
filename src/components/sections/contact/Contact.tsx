@@ -1,18 +1,22 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { FormEvent, useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import Image from "next/image";
+ 
 
 export default function Contact() {
-  const [msg, setMsg] = useState(false);
-  const [btnDisabled, setBtnDisabled] = useState(false);
-  const form = useRef();
+  const [msg, setMsg] = useState<boolean>(false);
+  const [btnDisabled, setBtnDisabled] = useState<boolean>(false);
+  const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs.sendForm("1111", "2222", form.current, "luLzakk9OdMNDVD6U");
-    form.current.reset();
-    setMsg(true);
-    setBtnDisabled(true);
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+       e.preventDefault();
+       if (form.current) {
+         emailjs.sendForm("1111", "2222", form.current, "luLzakk9OdMNDVD6U");
+         form.current.reset();
+         setMsg(true);
+         setBtnDisabled(true);
+       }
   };
 
   useEffect(() => {
@@ -60,21 +64,24 @@ export default function Contact() {
                 placeholder="Your Message..."
                 name="message"
                 required
-                cols="30"
-                rows="6"
+                cols={30}
+                rows={6}
                 className="rounded-lg  border-2 border-solid border-black p-1 opacity-90 focus:border-lime-700 focus:outline-none"
               />
               <button
                 className=" rounded-xl border-2 border-solid border-slate-500 bg-slate-300 py-2  font-two  text-lg font-semibold hover:bg-black hover:text-white disabled:bg-transparent"
                 type="submit"
-                disabled={btnDisabled && "true"}
+                disabled={btnDisabled ? true: false}
+                title="LET'S TALK"
               >
-                LET'S TALK
+                LETS TALK
               </button>
             </form>
-            <img
+            <Image
+              width={500}
+              height={500}
               className=" mr-10 max-w-2xl opacity-80  sm:hidden md:block  "
-              src="others/fsd.gif"
+              src="/others/fsd.gif"
               alt="me-1"
             />
           </div>

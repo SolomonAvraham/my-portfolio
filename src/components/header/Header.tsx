@@ -6,7 +6,9 @@ export default function Header() {
     <nav className=" z-50 rounded-b-3xl  sticky bg-slate-700 bg-opacity-10   top-0   flex items-center justify-between py-4 px-10">
       <div className="one">
         <h1 className=" animate-bounce font-two text-xl   hover:text-yellow-600 ">
-          <a href="#contactMe">Let's Talk</a> 
+          {/* <a title="LET'S TALK" href=" ">
+            Let's Talk 
+          </a> */}
         </h1>
       </div>
 

@@ -21,8 +21,8 @@ export default function Projects() {
 
   const projects = [
     {
-      name: "ggg",
-      img: "/others/yumyum.png",
+      name: "Eazy-Buy",
+      img: "https://camo.githubusercontent.com/1aae8d9bb916f907c31146ab8e3bde45e6d5299659e272c075e38ec96f7b78ed/68747470733a2f2f692e6962622e636f2f536444343964312f53637265656e73686f742d323032332d30372d31392d61742d32332d30312d31312e706e67",
       technology: [
         stackArray.ts,
         stackArray.react,
@@ -30,9 +30,10 @@ export default function Projects() {
         stackArray.express,
         stackArray.mongoDB,
       ],
-      description: `      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, velit praesentium, tempore id tenetur, quia necessitatibus debitis ratione exercitationem repudiandae ipsum soluta?`,
-      github: "https://github.com/SolomonAvraham/YumYum",
-      projectLink: "https://yumyum-recipes.netlify.app/",
+      description: `
+Eazy-Buy is a collaborative Electric Ecommerce Website project developed using MERN stack, TypeScript, and React Query. It offers a seamless shopping experience for electric products with a wide product catalog, quick search, user authentication, shopping cart, order management, payment integration, and user reviews.`,
+      github: "https://github.com/SolomonAvraham/Eazy-Buy",
+      projectLink: "https://eazy-buy-now.netlify.app/",
     },
     {
       name: "YumYum",
@@ -50,7 +51,7 @@ export default function Projects() {
     },
     {
       name: "Property Pro",
-      img: "others/dashboard.png",
+      img: "/others/dashboard.png",
       technology: [
         stackArray.ts,
         stackArray.react,

@@ -1,5 +1,6 @@
+import Image from "next/image";
 import { AiOutlineLink, AiFillGithub } from "react-icons/ai";
-
+ 
 type Card = {
   name: string;
   img: string;
@@ -38,7 +39,14 @@ const Card = ({
             <h3 className=" mt-1 font-three text-lg font-bold">Technology</h3>
             <div className=" flex items-center  justify-center gap-5 p-3">
               {technology?.map((tech) => (
-                <img className="w-8 " key={tech} src={tech} />
+                <Image
+                  width={500}
+                  height={500}
+                  className="w-8 "
+                  key={tech}
+                  src={tech}
+                  alt="techPic"
+                />
               ))}
             </div>
           </div>
@@ -62,14 +70,26 @@ const Card = ({
 
         <div className="row-span-3 w-[32rem]   hover:scale-125  cursor-pointer rounded-3xl    shadow-2xl ">
           <a href={projectLink} target="_blank">
-            <img className=" rounded-3xl  " src={img} alt={name} />
+            <Image
+              width={500}
+              height={500}
+              className=" rounded-3xl  "
+              src={img}
+              alt={name}
+            />
           </a>
         </div>
       </div>
 
       <div className=" text-center gap-3  flex flex-col items-center justify-center h-fit py-16  md:hidden">
         <div className="   mt-2   rounded-xl border-2 border-black  border-opacity-30 shadow-2xl ">
-          <img className=" rounded-xl " src={img} alt={name} />
+          <Image
+            width={500}
+            height={500}
+            className=" rounded-xl "
+            src={img}
+            alt={name}
+          />
         </div>
 
         <div className=" h-fit rounded-lg bg-white shadow-2xl  ">
@@ -79,7 +99,14 @@ const Card = ({
             <h3 className=" mt-2 font-three text-lg font-bold">Technology</h3>
             <div className=" flex items-center  justify-center gap-5 p-3">
               {technology?.map((tech) => (
-                <img className="w-8 " key={tech} src={tech} />
+                <Image
+                  width={500}
+                  height={500}
+                  className="w-8 "
+                  key={tech}
+                  src={tech}
+                  alt="techPic"
+                />
               ))}
             </div>
           </div>
