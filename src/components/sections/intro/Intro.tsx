@@ -14,6 +14,7 @@ const stackArray = [
   { name: "CSS", img: "/icons/css-3.png" },
   { name: "JavaScript", img: "/icons/js.png" },
   { name: "REACT", img: "/icons/science.png" },
+  { name: "REACT-Query", img: "/icons/react-query.png" },
   { name: "Nextjs", img: "/icons/nextjs.png" },
   { name: "TypeScript", img: "/icons/typescript.png" },
   { name: "Redux", img: "/icons/redux.svg" },

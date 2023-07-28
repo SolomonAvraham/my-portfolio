@@ -10,6 +10,7 @@ export default function Projects() {
   const stackArray = {
     ts: "/icons/typescript.png",
     react: "/icons/science.png",
+   reactQuery: "/icons/react-query.png"  ,
     nextjs: "/icons/nextjs.png",
     tailwind: "/icons/tailwind.png",
     redux: "/icons/redux.svg",
@@ -26,6 +27,7 @@ export default function Projects() {
       technology: [
         stackArray.ts,
         stackArray.react,
+        stackArray.reactQuery,
         stackArray.nodejs,
         stackArray.express,
         stackArray.mongoDB,
