@@ -18,7 +18,7 @@ export default function Header() {
           rel="noreferrer"
           download
           title="My Resume"
-        >
+        > 
           Resume
         </a>
       </div>
