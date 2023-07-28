@@ -25,12 +25,13 @@ export default function Footer() {
     },
   ];
   return (
-    <footer className="  bg-black bg-opacity-5  py-2     px-2 dark:bg-opacity-50">
+    <footer className="  bg-slate-300 bg-opacity-5  py-2     px-2 dark:bg-opacity-50">
       <div className="flex  flex-col    items-center justify-around  ">
+          <p className=" font-one underline underline-offset-4">Contact Me</p>
         <div className="flex ">
           {socialMedia.map((item, index) => (
             <a
-              className=" m-2 text-3xl  text-black hover:scale-125 dark:text-white "
+              className=" m-2 text-3xl  text-black hover:scale-125  "
               href={item.url}
               key={index}
               target="_blank"
@@ -40,7 +41,7 @@ export default function Footer() {
             </a>
           ))}
         </div>
-        <h1 className="font-one text-sm md:text-lg  text-black dark:text-white">
+        <h1 className="font-one text-sm md:text-lg  text-black ">
           ©2023 Solomon.Portfolio
         </h1>
       </div>

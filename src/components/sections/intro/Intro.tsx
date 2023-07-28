@@ -18,10 +18,10 @@ const stackArray = [
   { name: "TypeScript", img: "/icons/typescript.png" },
   { name: "Redux", img: "/icons/redux.svg" },
   { name: "Zustand", img: "/icons/zustand-.png" },
-  { name: "MongoDB", img: "/icons/MongoDB.png" },
+  { name: "MongoDB", img: "/icons/MongoDB.svg" },
   { name: "Node.js", img: "/icons/node-js.png" },
   { name: "Tailwind", img: "/icons/tailwind.png" },
-  { name: "Express.js", img: "/icons/Express-js.png" },
+  { name: "Express.js", img: "/icons/express-js-.png" },
   { name: "Git", img: "/icons/Git.svg" },
   { name: "GitHub", img: "/icons/github.png" },
 ];
@@ -50,8 +50,6 @@ const CircleIcons = ({ numOfChildren }: NumOfChildren) => {
 
   const childElements = [];
 
-  
-
   for (let i = 0; i < numOfChildren; i++) {
     const angle = (i * 360) / numOfChildren;
     const x = radius * Math.cos((angle * Math.PI) / 180);
@@ -60,7 +58,7 @@ const CircleIcons = ({ numOfChildren }: NumOfChildren) => {
     childElements.push(
       <div
         key={i}
-        className={"  absolute    w-6 md:w-7     p-1 "}
+        className="  absolute    w-6 md:w-7     p-1 "
         style={{
           top: `calc(50% - ${y}px)`,
           left: `calc(50% + ${x}px)`,
@@ -78,7 +76,7 @@ const CircleIcons = ({ numOfChildren }: NumOfChildren) => {
   }
 
   return (
-    <div className="  animate-pulse z-40   absolute md:top-[46.3%] top-[24.7%] md:left-[30.6%]   left-[45.5%]   ">
+    <div className="  animate-pulse z-40   absolute md:top-[26.5%] top-[17.7%] md:left-[31.6%]   left-[45.5%]   ">
       {childElements}
     </div>
   );
@@ -106,7 +104,7 @@ export default function Intro() {
 
   return (
     <section className="min-h-screen md:h-[45rem] relative bg-me-one md:bg-cover bg-fixed sm:bg-center bg-no-repeat   sm:bg-[length:520px_800px]  ">
-      <div className=" py-36 flex flex-col   md:py-48 md:px-48    md:grid  grid-cols-2   place-items-center  justify-items-center">
+      <div className=" py-11 flex flex-col   md:py-1/2 md:px-48    md:grid  grid-cols-2   place-items-center  justify-items-center">
         <div className=" static">
           <CircleIcons numOfChildren={stackArray.length} />
           <div className="bgCircle  shadow-2xl   col-span-1   relative   overflow-hidden  z-0 h-52 w-52 rounded-full border-4 border-solid border-gray-400     md:h-60 md:w-60  ">
@@ -138,24 +136,18 @@ export default function Intro() {
           <h1 className="font-three py-2 tracking-wider mt-5  text-3xl  [text-shadow:_-4px_-0px_0px_rgb(0_0_0_/_30%)]   md:text-5xl">
             Solomon Avraham
           </h1>
-          <hr className=" mx-auto w-1/2  py-1 border-slate-900 opacity-30 md:w-96 " />
-          <h3 className="tracking-wider  md:py-2   font-one text-2xl  md:text-3xl">
+          <hr className=" mx-auto w-1/2  py-1 border-slate-900 opacity-5 md:w-96 " />
+          <h3 className="tracking-wider  md:py-1   font-one text-2xl  md:text-4xl">
             Full Stack Developer
           </h3>
-          <div className="   h-[19rem] md:h-40 font-two p-3 md:p-0 md:text-xl tracking-wider     text-gray-800     ">
+          <hr className=" mx-auto w-1/2  py-1 border-slate-900 opacity-5 md:w-52 " />
+
+          <div className="   h-[19rem] md:h-40 font-three p-3 md:p-0 md:text-lg tracking-widest  text-gray-700  ">
             <TypeAnimation
               sequence={[
-                "<h1> Hello World : ] </h1> ",
-                2500,
-                "😅😅😅",
-                2000,
-                ` Welcome to my portfolio!
-I'm Solomon Avraham, a Front-End Developer with
-expertise in the MERN stack, particularly Next.js
-and React. I specialize in crafting captivating web
-applications with a focus on seamless user experiences.
- Feel free to check out my projects and let's collaborate
- to build something extraordinary together! Thank you for visiting.`,
+                "Hello World : ] ",
+                200,
+                `Welcome to my portfolio! My name is Solomon Avraham, a freelance and junior Full Stack Developer with expertise in the MERN stack, particularly Next.js and React. I specialize in crafting captivating web applications with a focus on seamless user experiences. Check out my projects, and let's collaborate to build something extraordinary together! Thank you for visiting.`,
                 1500,
               ]}
               wrapper="span"

@@ -19,8 +19,8 @@ const Skills = () => {
     { name: "Redux", img: "/icons/redux.svg" },
     { name: "Zustand", img: "/icons/zustand-.png" },
     { name: "Node.js", img: "/icons/node-js.png" },
-    { name: "Express.js", img: "/icons/Express-js.png" },
-    { name: "MongoDB", img: "/icons/MongoDB.png" },
+    { name: "Express.js", img: "/icons/express-js-.png" },
+    { name: "MongoDB", img: "/icons/MongoDB.svg" },
     { name: "Git", img: "/icons/Git.svg" },
     { name: "GitHub", img: "/icons/github.png" },
   ]; 

@@ -15,14 +15,14 @@ export default function Projects() {
     redux: "/icons/redux.svg",
     zustand: "/icons/zustand-.png",
     nodejs: "/icons/node-js.png",
-    express: "/icons/Express-js.png",
-    mongoDB: "/icons/MongoDB.png",
+    express: "/icons/express-js-.png",
+    mongoDB: "/icons/MongoDB.svg",
   };
 
   const projects = [
     {
       name: "Eazy-Buy",
-      img: "https://camo.githubusercontent.com/1aae8d9bb916f907c31146ab8e3bde45e6d5299659e272c075e38ec96f7b78ed/68747470733a2f2f692e6962622e636f2f536444343964312f53637265656e73686f742d323032332d30372d31392d61742d32332d30312d31312e706e67",
+      img: "/others/eazybuy.png",
       technology: [
         stackArray.ts,
         stackArray.react,

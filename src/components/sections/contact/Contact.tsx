@@ -27,8 +27,8 @@ export default function Contact() {
 
   return (
     <>
-      <section className="   text-center     ">
-        <div id="contactMe" className="bg-gray-300   bg-opacity-50 py-5  ">
+      <section className="   text-center  bg-me-two md:bg-cover bg-fixed sm:bg-center bg-no-repeat bg-left-top    sm:bg-[length:520px_500px]    ">
+        <div id="contactMe" className="  py-5  ">
           <h1 className=" py-11 mt-5 font-three md:py-5 tracking-widest md:mt-16  text-6xl   [text-shadow:_-4px_-0px_0px_rgb(0_0_0_/_30%)]   md:text-9xl">
             CONTACT ME
           </h1>
@@ -71,7 +71,7 @@ export default function Contact() {
               <button
                 className=" rounded-xl border-2 border-solid border-slate-500 bg-slate-300 py-2  font-two  text-lg font-semibold hover:bg-black hover:text-white disabled:bg-transparent"
                 type="submit"
-                disabled={btnDisabled ? true: false}
+                disabled={btnDisabled ? true : false}
                 title="LET'S TALK"
               >
                 LETS TALK
