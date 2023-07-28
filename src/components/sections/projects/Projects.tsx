@@ -41,7 +41,6 @@ Eazy-Buy is a collaborative Electric Ecommerce Website project developed using M
       name: "YumYum",
       img: "/others/yumyum.png",
       technology: [
-        stackArray.ts,
         stackArray.react,
         stackArray.nodejs,
         stackArray.express,

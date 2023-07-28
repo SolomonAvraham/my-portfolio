@@ -9,6 +9,7 @@ import {
 } from "react-icons/ai";
 import Image from "next/image";
 
+
 const stackArray = [
   { name: "HTML", img: "/icons/html-5.png" },
   { name: "CSS", img: "/icons/css-3.png" },

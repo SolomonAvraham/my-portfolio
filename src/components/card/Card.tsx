@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { AiOutlineLink, AiFillGithub } from "react-icons/ai";
- 
+
 type Card = {
   name: string;
   img: string;
@@ -20,12 +20,12 @@ const Card = ({
 }: Card) => {
   const links = [
     {
-      url: `${projectLink}`,
-      icon: <AiOutlineLink className="text-blue-700 hover:text-blue-900 " />,
-    },
-    {
       url: `${github}`,
       icon: <AiFillGithub className="  hover:text-black " />,
+    },
+    {
+      url: `${projectLink}`,
+      icon: <AiOutlineLink className="text-blue-700 hover:text-blue-900 " />,
     },
   ];
 
@@ -92,12 +92,12 @@ const Card = ({
           />
         </div>
 
-        <div className=" h-fit rounded-lg bg-white shadow-2xl  ">
+        <div className=" h-fit  rounded-lg bg-white shadow-2xl  ">
           <div className="  p-2">
             <h2 className="  font-three text-xl font-bold">{name}</h2>
             <p className="font-two  text-gray-700">{description}</p>
             <h3 className=" mt-2 font-three text-lg font-bold">Technology</h3>
-            <div className=" flex items-center  justify-center gap-5 p-3">
+            <div className=" flex items-center overflow-x-scroll  justify-center gap-5 p-3">
               {technology?.map((tech) => (
                 <Image
                   width={500}
