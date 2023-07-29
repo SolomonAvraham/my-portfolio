@@ -3,8 +3,8 @@ export default function Header() {
     <nav className=" shadow-sm z-50 rounded-b-3xl  sticky bg-slate-700 bg-opacity-5   top-0   flex items-center justify-between py-4 px-10">
       <div className="one  hover:scale-x-105 ">
         <h1 className=" animate-bounce font-three text-xl   hover:text-sky-800">
-          <a title="LET'S TALK" href="#contactMe">
-           Contact Me
+          <a title="Contact Me" href="#contactMe">
+            Contact Me
           </a>
         </h1>
         <hr className=" w-2/2 h-[3px] shadow-2xl  shadow-white bg-gray-800  bg-opacity-5" />
@@ -18,7 +18,7 @@ export default function Header() {
           rel="noreferrer"
           download
           title="My Resume"
-        > 
+        >
           Resume
         </a>
       </div>

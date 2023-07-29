@@ -1,5 +1,5 @@
 "use client";
-import React, { FormEvent, useEffect, useRef, useState } from "react";
+import React, {   useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
  
@@ -69,12 +69,12 @@ export default function Contact() {
                 className="rounded-lg  border-2 border-solid border-black p-1 opacity-90 focus:border-lime-700 focus:outline-none"
               />
               <button
-                className=" rounded-xl border-2 border-solid border-slate-500 bg-slate-300 py-2  font-two  text-lg font-semibold hover:bg-black hover:text-white disabled:bg-transparent"
+                className=" rounded-xl border-2 border-solid border-slate-500 bg-slate-300 py-2  font-two  text-lg font-semibold hover:bg-black hover:text-white disabled:bg-transparent disabled:hover:text-black"
                 type="submit"
                 disabled={btnDisabled ? true : false}
                 title="LET'S TALK"
               >
-                LETS TALK
+                SEND
               </button>
             </form>
             <Image

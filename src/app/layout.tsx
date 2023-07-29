@@ -50,7 +50,7 @@ Web Design Services
 עצמאי
 
 `,
-}; 
+};
 
 export default function RootLayout({
   children,
@@ -61,10 +61,14 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="logo/logo.png" type="image/png" sizes="50*50" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        ></meta>
       </head>
       <body
         suppressHydrationWarning={true}
-        className={`${inter.className} bg-slate-700 bg-opacity-10 p-1`}
+        className={`${inter.className} bg-transparent p-1`}
       >
         <Header />
         {children}
