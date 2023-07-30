@@ -7,13 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
-     
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "me-one": "url('/me/me-1-bg.jpg')",
-        "me-one-left": "url('/me/me-1-bg-left.jpg')",
+        bg1: "url('/others/bg-1.jpeg')",
         "me-two": "url('/me/me-3.jpg')",
       },
       screens: {

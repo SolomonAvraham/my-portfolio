@@ -27,13 +27,12 @@ export default function Contact() {
 
   return (
     <>
-      <section className="   text-center  bg-me-two md:bg-cover bg-fixed sm:bg-center bg-no-repeat bg-left-top    sm:bg-[length:520px_500px]    ">
+      <section className="   text-center    ">
         <div id="contactMe" className="  py-5  ">
           <h1 className=" py-11 mt-5 font-three md:py-5 tracking-widest md:mt-16  text-6xl   [text-shadow:_-4px_-0px_0px_rgb(0_0_0_/_30%)]   md:text-9xl">
             CONTACT ME
           </h1>
-          {/* <hr className=" mx-auto w-72 border-spacing-y-60 border-slate-900 opacity-30 md:w-96 " /> */}
-
+      
           <div className=" relative   flex items-center   py-10  ">
             {msg && (
               <div className="absolute left-0  right-0 z-10 m-auto flex h-28 w-52 flex-col justify-center rounded-xl bg-zinc-300 bg-opacity-95 text-center ">

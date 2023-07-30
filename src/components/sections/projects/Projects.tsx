@@ -68,7 +68,7 @@ Eazy-Buy is a collaborative Electric Ecommerce Website project developed using M
 
   return (
     <ParallaxProvider>
-      <section className=" bg-gray-400  md:py-24  h-fit md:h-fit relative bg-me-one-left md:bg-cover  bg-fixed sm:bg-center bg-no-repeat   sm:bg-[length:520px_500px] ">
+      <section className="   md:py-24  h-fit md:h-fit relative  bg-gray-100 ">
         <div className="z-0 relative h-full  flex flex-col overflow-hidden items-center justify-center">
           <ParallaxBanner className=" text-center   ">
             <h1 className=" py-11 mt-5 font-three md:py-5 tracking-widest md:mt-16  text-6xl   [text-shadow:_-4px_-0px_0px_rgb(0_0_0_/_30%)]   md:text-9xl">
@@ -77,11 +77,11 @@ Eazy-Buy is a collaborative Electric Ecommerce Website project developed using M
           </ParallaxBanner>
 
           <Parallax
-            translateY={["-1030px", "122px"]}
-            scale={[4, 2]}
+            translateY={["-120px", "122px"]}
+            scale={[1, 1]}
             easing="easeOutQuart"
             speed={10}
-            className=" absolute top-0 -z-20 md:-z-10 opacity-5 md:opacity-20"
+            className="sm:hidden md:block absolute top-0 -z-20 md:-z-10 opacity-5 md:opacity-20"
           >
             <div className=" grid grid-cols-2 w-screen  ">
               {projects.map((item) => (
@@ -113,11 +113,11 @@ Eazy-Buy is a collaborative Electric Ecommerce Website project developed using M
           </div>
 
           <Parallax
-            translateY={["-133px", "120px"]}
-            scale={[6, 1]}
+            translateY={["-33px", "1230px"]}
+            scale={[1, 1]}
             easing="easeInQuart"
-            speed={10}
-            className="  absolute top-0 -z-10 md:-z-30 opacity-20 md:opacity-20"
+            speed={-10}
+            className="sm:hidden md:block   absolute -bottom-0 -z-10 md:-z-30 opacity-20 md:opacity-20"
           >
             <div className=" grid grid-cols-1 w-screen  ">
               {projects.map((item) => (

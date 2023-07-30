@@ -37,7 +37,6 @@ const CircleIcons = ({ numOfChildren }: NumOfChildren) => {
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      console.log(width);
 
       setRadius(width >= 450 ? 150 : 120);
     };
@@ -106,7 +105,7 @@ export default function Intro() {
   ];
 
   return (
-    <section className="min-h-screen md:h-[45rem] relative bg-me-one md:bg-cover bg-fixed sm:bg-center bg-no-repeat   sm:bg-[length:520px_800px]  ">
+    <section className="min-h-screen md:h-[45rem] relative  bg-gray-100  ">
       <div className=" py-11 flex flex-col 2xl:py-52  md:py-1/2 md:px-48    md:grid  grid-cols-2   place-items-center  justify-items-center">
         <div className=" static">
           <CircleIcons numOfChildren={stackArray.length} />

@@ -27,7 +27,7 @@ const Skills = () => {
   ]; 
   return (
     <ParallaxProvider>
-      <div className=" h-[50rem]   md:h-[40rem]  relative  bg-me-two md:bg-cover bg-fixed sm:bg-center bg-no-repeat    sm:bg-[length:520px_500px] ">
+      <div className=" h-[50rem]   md:h-[40rem]  relative  bg-gray-100  ">
         <div className="z-0 relative h-full  flex flex-col overflow-hidden items-center justify-center">
           <ParallaxBanner className=" text-center   ">
             <h1 className="sm:hidden md:block  font-three md:py-2 tracking-widest md:mt-5  text-2xl   [text-shadow:_-4px_-0px_0px_rgb(0_0_0_/_30%)]   md:text-9xl">
