@@ -20,8 +20,8 @@ module.exports = {
         sm: "0px",
         md: "768px",
         lg: "1024px",
-        xl: "1280px",
-        "2xl": "1536px",
+        xl: "1440",
+        "2xl": "1920px",
       },
       fontFamily: {
         one: "'Caveat', cursive",

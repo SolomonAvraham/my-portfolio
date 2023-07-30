@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <nav className=" shadow-sm z-50 rounded-b-3xl  sticky bg-slate-700 bg-opacity-5   top-0   flex items-center justify-between py-4 px-10">
+    <nav className=" shadow-sm z-50 rounded-b-3xl  sticky bg-gray-100 bg-opacity-70   top-0   flex items-center justify-between py-4 px-10">
       <div className="one  hover:scale-x-105 ">
         <h1 className=" animate-bounce font-three text-xl   hover:text-sky-800">
           <a title="Contact Me" href="#contactMe">

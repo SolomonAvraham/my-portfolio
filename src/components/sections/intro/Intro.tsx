@@ -9,7 +9,6 @@ import {
 } from "react-icons/ai";
 import Image from "next/image";
 
-
 const stackArray = [
   { name: "HTML", img: "/icons/html-5.png" },
   { name: "CSS", img: "/icons/css-3.png" },
@@ -38,6 +37,8 @@ const CircleIcons = ({ numOfChildren }: NumOfChildren) => {
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
+      console.log(width);
+
       setRadius(width >= 450 ? 150 : 120);
     };
 
@@ -78,7 +79,7 @@ const CircleIcons = ({ numOfChildren }: NumOfChildren) => {
   }
 
   return (
-    <div className="  animate-pulse z-40   absolute md:top-[26.5%] top-[17.7%] md:left-[31.6%]   left-[45.5%]   ">
+    <div className="  animate-pulse z-40 2xl:top-[36.5%] 2xl:left-[29.3%]   absolute lg:top-[24.5%] top-[17.7%] lg:left-[30.6%]   left-[45.5%]   ">
       {childElements}
     </div>
   );
@@ -106,7 +107,7 @@ export default function Intro() {
 
   return (
     <section className="min-h-screen md:h-[45rem] relative bg-me-one md:bg-cover bg-fixed sm:bg-center bg-no-repeat   sm:bg-[length:520px_800px]  ">
-      <div className=" py-11 flex flex-col   md:py-1/2 md:px-48    md:grid  grid-cols-2   place-items-center  justify-items-center">
+      <div className=" py-11 flex flex-col 2xl:py-52  md:py-1/2 md:px-48    md:grid  grid-cols-2   place-items-center  justify-items-center">
         <div className=" static">
           <CircleIcons numOfChildren={stackArray.length} />
           <div className="bgCircle  shadow-2xl   col-span-1   relative   overflow-hidden  z-0 h-52 w-52 rounded-full border-4 border-solid border-gray-400     md:h-60 md:w-60  ">
