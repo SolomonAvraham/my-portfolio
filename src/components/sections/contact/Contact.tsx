@@ -32,8 +32,8 @@ export default function Contact() {
           <h1 className=" py-11 mt-5 font-three md:py-5 tracking-widest md:mt-16  text-6xl   [text-shadow:_-4px_-0px_0px_rgb(0_0_0_/_30%)]   md:text-9xl">
             CONTACT ME
           </h1>
-      
-          <div className=" relative   flex items-center   py-10  ">
+
+          <div className=" relative   flex justify-center  items-center gap-52   py-10  ">
             {msg && (
               <div className="absolute left-0  right-0 z-10 m-auto flex h-28 w-52 flex-col justify-center rounded-xl bg-zinc-300 bg-opacity-95 text-center ">
                 <span className=" text-6xl">🙏🏾</span>
@@ -41,7 +41,7 @@ export default function Contact() {
               </div>
             )}
             <form
-              className=" mx-auto flex flex-col  gap-10 md:w-96"
+              className="  flex flex-col  gap-10 md:w-96"
               ref={form}
               onSubmit={sendEmail}
             >
@@ -79,7 +79,7 @@ export default function Contact() {
             <Image
               width={500}
               height={500}
-              className=" mr-10 max-w-2xl opacity-80  sm:hidden md:block  "
+              className=" opacity-60  sm:hidden md:block  "
               src="/others/fsd.gif"
               alt="me-1"
             />

@@ -81,7 +81,7 @@ const Card = ({
         </div>
       </div>
 
-      <div className=" text-center gap-3  flex flex-col items-center justify-center h-fit py-16  md:hidden">
+      <div className=" text-center gap-3  flex flex-col items-center justify-center h-fit  py-5 md:hidden">
         <div className="   mt-2   rounded-xl border-2 border-black  border-opacity-30 shadow-2xl ">
           <Image
             width={500}

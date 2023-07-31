@@ -12,8 +12,9 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "me-one": "url('/me/me-1-bg.jpg')",
-        bg1: "url('/others/bg-1.jpeg')",
+        "me-one-left": "url('/me/me-1-bg-left.jpg')",
         "me-two": "url('/me/me-3.jpg')",
+        bg1: "url('/others/bg-1.jpeg')",
       },
       screens: {
         sm: "0px",
